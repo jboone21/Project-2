@@ -1,0 +1,147 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(#FC5E55, #FA4083);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.125rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+main {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+} 
+
+.cards {
+    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;   
+}
+
+.card1 {
+    background-image: url(images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%; 
+}
+.card2 {
+    background-image: url(images/image-background-card2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+.card3 {
+    background-image: url(images/image-background-card3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+.card1, .card2, .card3 {
+    padding: 30px 30px 10px 30px;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7);
+    /* www.w3schools.com/css - good for css stuff - there are tons of kinds of drop shadows that you can apply. */
+}
+.herobox1 {
+    flex: 2;
+    padding-right: 100px;
+}
+
+.herobox2 {
+    flex: 1;
+  
+}
+
+h1 {
+    font-size: 3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+    /* spacing should be absolute font sizes / actual font measurments should be relative */
+
+}
+p {
+    line-height: 1.75rem; 
+    /* about half again bigger as the body text */
+    /* make sure its the same measurment as the font-size */
+    margin-bottom: 0.5rem;
+}
+
+
+.cards p {
+    font-size: .85rem;
+    line-height: 1.2rem; 
+    /* line-height wants to be bigger than font size */
+    margin-top: 10px;
+    /* margin: top left bottom right or
+    margin: top/bottom left/right */
+}
+
+.cards i {
+    font-size: 100px;
+    /* You are using the class .cards i because if you are to use icons any where else on your site this styling will only apply to the card icons. future proofing. */
+}
+
+.mybutton {
+    background-color: white;
+    color: #FA4083;
+    font-family:'Playfair Display', serif ;
+    padding: 11px 25px;
+    border-radius: 5px;
+    /* box-shadow: x y blur color; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.322);
+}
+
+a.mybutton {
+    display: inline-block;
+    margin-top: 20px;
+    /* a.mybutton is going to be different than an a .mybutton class. Because this one is saying an a reference that is a button will do these things, an a (space) my button is refering to an a tag that is inside of a mybutton. little confusing. */
+}
+
+/* nav a.mybutton (IF an a.mybutton is inside of a nav) */
+nav a.mybutton {
+    margin-left: 30px;
+}
+
+.navbutton {
+    color: white;
+    border: 1px solid white;
+    /* border : weight style color */
+    font-family:'Playfair Display', serif ;
+    padding: 11px 25px;
+}
