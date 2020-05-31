@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+ 
 }
 
 body {
@@ -127,6 +127,10 @@ p {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.322);
 }
 
+.mybutton:hover {
+    background-color: rgb(103, 243, 22);
+    transition-duration: 1s;
+}
 a.mybutton {
     display: inline-block;
     margin-top: 20px;
@@ -144,4 +148,21 @@ nav a.mybutton {
     /* border : weight style color */
     font-family:'Playfair Display', serif ;
     padding: 11px 25px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    /* using flex-wrap will wrap all of these boxes again and again no matter how many you use! cool! */
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+    
 }
