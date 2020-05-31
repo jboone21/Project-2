@@ -1,7 +1,3 @@
-html {
- 
-}
-
 body {
     background-image: linear-gradient(#FC5E55, #FA4083);
     font-family: 'Roboto', sans-serif;
@@ -148,6 +144,8 @@ nav a.mybutton {
     /* border : weight style color */
     font-family:'Playfair Display', serif ;
     padding: 11px 25px;
+    display: inline-block;
+    position: relative;
 }
 
 .testimonials {
@@ -165,4 +163,45 @@ nav a.mybutton {
     box-sizing: border-box;
     margin-top: 50px;
     
+}
+/* the space between tbox and the colon is significant  */
+/* .tbox :last-child {
+    font-size: .8rem;
+} */
+/* 
+more specific than above if there is maybe an image that is in the way of one of your las-child p tags. */
+
+.tbox p:last-of-type {
+    font-size: .8rem;
+    padding-left: 30px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    /* z-index: 1; if dropdown is hidden/ it might just be behind stuff */
+    padding-top: 20px;
+    text-align: center;
+}
+
+.navbutton:hover {
+    transition-duration: 500ms;
+    background-color: mediumaquamarine;
+}
+
+.navbutton:hover .dropdown {
+    display: block;
+}
+
+ .dropdown .navbutton{
+    width: 90px;
+    background-color: rgb(230, 10, 250);
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-left: -25px;
+   
+}
+
+.dropdown .navbutton a {
+    color: white;
 }
